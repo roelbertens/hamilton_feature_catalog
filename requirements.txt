@@ -1,0 +1,11 @@
+numpy
+pandas
+typing_extensions > 4.0.0
+typing_inspect
+pyspark 
+jupyter 
+ipykernel
+sf-hamilton
+graphviz
+black
+isort
