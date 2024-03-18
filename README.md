@@ -1,2 +1,12 @@
-# hamilton_feature_catalog
-An example repo to show how to use the Hamilton framework to manage your feature transformation logic.
+# Feature Catalog using Hamilton
+
+This repo shows how to use the [Hamilton](https://github.com/DAGWorks-Inc/hamilton) framework to manage your feature transformation logic.
+The example notebook explain this in more detail.
+
+## Setup
+
+To run the code you can use `.devcontainer/devcontainer.json`, see these [docs](https://code.visualstudio.com/docs/devcontainers/containers) for details.
+
+## Data
+
+The sample data set is created from: https://www.kaggle.com/datasets/sanskar457/fraud-transaction-detection

@@ -17,5 +17,5 @@ TRANSACTIONS__SCHEMA = [
 def transactions(spark_session: ps.SparkSession) -> ps.DataFrame:
     # NOTE: to simulate we area dealing with big data we are going to use spark
     return spark_session.read.csv(
-        "data/Final Transactions.csv", header=True, inferSchema=True
+        "data/transactions_sample.csv", header=True, inferSchema=True
     ).select(*[i[0] for i in TRANSACTIONS__SCHEMA])
