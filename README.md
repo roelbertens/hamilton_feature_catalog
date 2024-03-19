@@ -1,7 +1,7 @@
 # Feature Catalog using Hamilton
 
 This repo shows how to use the [Hamilton](https://github.com/DAGWorks-Inc/hamilton) framework to manage your feature transformation logic.
-The example notebook explain this in more detail.
+The example notebook explains this in more detail.
 
 ## Setup
 
