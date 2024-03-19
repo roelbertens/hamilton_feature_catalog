@@ -59,6 +59,4 @@ def transactions_clean(
     if transactions__filter_expression is not None:
         transactions = transactions.filter(transactions__filter_expression)
 
-    return transactions.select(
-        [sf.col(c).alias(c.lower()) for c in transactions.columns]
-    ).select(final_columns)
+    return transactions.distinct().dropna().select(*final_columns)
