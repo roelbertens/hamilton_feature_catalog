@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=45"]
+
+[project]
+name = "hamilton-feature-catalog"
+authors = [
+    {name = "Roel Bertens"},
+]
+version = "1.0.0"
+description = "This repo shows how to use the Hamilton framework to manage your feature transformation logic."
+license = {text = "BSD"}
+readme = "README.md"
+requires-python = ">=3.9"

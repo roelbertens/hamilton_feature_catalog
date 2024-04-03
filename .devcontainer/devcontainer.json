@@ -22,7 +22,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "apt-get -y update && apt-get -y upgrade && apt-get install -y graphviz && pip3 install --user -r requirements.txt"
+	"postCreateCommand": "apt-get -y update && apt-get -y upgrade && apt-get install -y graphviz && pip3 install --user -r requirements.txt && pip3 install -e ."
 
 	// Configure tool-specific properties.
 	// "customizations": {},

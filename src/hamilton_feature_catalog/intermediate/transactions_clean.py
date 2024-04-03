@@ -1,8 +1,15 @@
 from typing import Optional
 
 import pyspark.sql as ps
-from hamilton.function_modifiers import (ResolveAt, pipe, resolve, schema,
-                                         source, step, tag_outputs)
+from hamilton.function_modifiers import (
+    ResolveAt,
+    pipe,
+    resolve,
+    schema,
+    source,
+    step,
+    tag_outputs,
+)
 from pyspark.sql import functions as sf
 
 TRANSACTIONS_CLEAN__SCHEMA = [
@@ -27,8 +34,8 @@ def _is_special_customer(
 
 
 @tag_outputs(
-    transactions_clean={"data_type": "intermediate_data"},
-    with__is_special_customer={"data_type": "optional_data"},
+    transactions_clean={"data_type": "intermediate"},
+    with__is_special_customer={"data_type": "optional"},
 )
 @resolve(
     when=ResolveAt.CONFIG_AVAILABLE,

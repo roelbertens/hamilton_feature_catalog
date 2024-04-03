@@ -12,10 +12,10 @@ TRANSACTIONS__SCHEMA = [
 ]
 
 
-@tag(data_type="raw_data")
+@tag(data_type="raw")
 @schema.output(*TRANSACTIONS__SCHEMA)
-def transactions(spark_session: ps.SparkSession) -> ps.DataFrame:
+def transactions(spark: ps.SparkSession) -> ps.DataFrame:
     # NOTE: to simulate we area dealing with big data we are going to use spark
-    return spark_session.read.csv(
+    return spark.read.csv(
         "data/transactions_sample.csv", header=True, inferSchema=True
     ).select(*[i[0] for i in TRANSACTIONS__SCHEMA])

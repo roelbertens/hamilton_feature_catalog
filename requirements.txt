@@ -2,7 +2,9 @@ numpy
 pandas
 typing_extensions > 4.0.0
 typing_inspect
-pyspark 
+pyspark
+pyspark_test
+pytest 
 jupyter 
 ipykernel
 sf-hamilton
